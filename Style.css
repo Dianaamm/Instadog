@@ -1,0 +1,47 @@
+@font-face {
+  font-family: 'univers';
+  src: local('univers');
+  src: url('fonts/univers.eot');
+  src: url('fonts/univers.woff'), url('fonts/univers.woff2'), url('fonts/univers.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'univers'
+}
+
+header.main {
+  height: 80px;
+  width: 100%;
+  border: 1px solid rgb(105, 105, 105);
+
+}
+.main .logo {
+  width: 30%;
+  height: inherit;
+  font-size: 40px;
+  padding: 20px;
+  float: left;
+}
+
+.logo span {
+  font-size: 30px;
+}
+.main nav >ul {
+  height: inherit;
+  float: right;
+  width: 30%;
+  list-style: none;
+}
+.main nav > ul >li {
+  width: 33.33%;
+  float: left;
+  height: inherit;
+  text-align: center;
+  font-size: 30px;
+  padding: 15px;
+}
