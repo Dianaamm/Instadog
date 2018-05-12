@@ -11,15 +11,16 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'univers'
+  font-family: 'univers';
 }
+
 
 header.main {
   height: 80px;
-  width: 100%;
   border: 1px solid rgb(105, 105, 105);
-
 }
+
+/*logo*/
 .main .logo {
   width: 30%;
   height: inherit;
@@ -31,17 +32,139 @@ header.main {
 .logo span {
   font-size: 30px;
 }
+
+/*nav*/
 .main nav >ul {
   height: inherit;
   float: right;
   width: 30%;
   list-style: none;
 }
-.main nav > ul >li {
+
+.main nav > ul > li {
   width: 33.33%;
+  text-align: center;
+  font-size: 25px;
+  line-height: 80px;
   float: left;
   height: inherit;
-  text-align: center;
-  font-size: 30px;
-  padding: 15px;
+
+}
+
+.main nav > ul > li a:visited{
+    color: #000;
+}
+
+/*section*/
+
+.content {
+  width: 80%;
+  margin: 0 10%;
+  float: left;
+  /* background-color: rgb(207, 189, 201); */
+}
+
+/* .content > section {
+  width: 50%;
+  height: 500px;
+  background-color: rgb(97, 57, 152);
+  float: left;
+}
+
+.content > aside {
+  width: 40%;
+  height: 200px;
+  background-color: rgb(42, 106, 68);
+  float: left;
+} */
+
+.content > section {
+  width: 60%;
+  height: 400px;
+  /*background-color: rgb(150, 114, 149);*/
+  float: left;
+  padding: 40px;
+}
+
+.content > aside {
+  width: 40%;
+  height: 200px;
+  float: left;
+}
+
+/*ASIDE*/
+
+.content > aside > .img, .content > section > article .img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: rgb(197, 129, 251);
+  background-image: url('images/1.jpg');
+  background-size: cover;
+  background-position: 50% 50%;
+  float: left;
+}
+
+.content > aside > h2 {
+  padding-left: 20px;
+  float: left;
+  line-height: 80px;
+}
+
+.content > aside > p {
+  padding: 20px;
+  color: rgb(26, 66, 85);
+  clear: both;
+}
+
+/* SECTION ARTICLE*/
+.content > section > article {
+  padding: 20px;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  margin: 20px;
+}
+
+.content > section > article .img {
+  width: 40px;
+  height: 40px;
+  margin-right: 20px;
+}
+
+.content > section > article > .info {
+  padding: 20px;
+  line-height: 40px;
+}
+
+.content > section > article img {
+  display: block;
+  width: 100%;
+}
+
+.content > section > article > .comment {
+  padding: 20px;
+  font-size: 1.5em;
+  overflow: auto;
+}
+
+.content > section > article input[type="text"]{
+  display: block;
+  float: right;
+  border: none;
+  border: 1px solid #9696;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+@keyframes movebox {
+  0% { transform: rotate(0deg);}
+  50% { transform: rotateX(360deg);}
+  100% {transform: rotate(0deg);}
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: rgb(231, 135, 227);
+  animation: movebox 2s ease-out infinite;
 }
